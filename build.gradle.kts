@@ -28,6 +28,13 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation("com.auth0:java-jwt:4.2.1")
+
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-swing:1.1.1")
+
+    // Icons
+    implementation(compose.materialIconsExtended)
+    implementation(compose.material3)
 }
 
 compose.desktop {

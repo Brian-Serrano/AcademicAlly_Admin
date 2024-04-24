@@ -54,5 +54,15 @@ val typography = Typography(
         fontFamily = montserrat,
         fontWeight = FontWeight.Medium,
         fontSize = 50.sp
+    ),
+    h6 = TextStyle(
+        fontFamily = montserrat,
+        fontWeight = FontWeight.Medium,
+        fontSize = 28.sp
+    ),
+    body2 = TextStyle(
+        fontFamily = montserrat,
+        fontWeight = FontWeight.Medium,
+        fontSize = 14.sp
     )
 )

@@ -1,0 +1,5 @@
+package utils
+
+enum class Routes {
+    SIGNUP, LOGIN, ASSESSMENT, ABOUT_ASSESSMENT, BAN_USER, SUPPORT_CHAT, ABOUT_SUPPORT_CHAT
+}
