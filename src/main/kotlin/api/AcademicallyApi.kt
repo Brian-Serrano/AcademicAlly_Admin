@@ -88,7 +88,7 @@ interface AcademicallyApi {
                 .create()
 
             return Retrofit.Builder()
-                .baseUrl("http://127.0.0.1:5000")
+                .baseUrl("https://BrianSerrano.pythonanywhere.com")
                 .client(okHttpClient)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build()
