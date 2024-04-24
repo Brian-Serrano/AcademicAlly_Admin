@@ -82,13 +82,13 @@ fun Login(
                         success = {
                             FileUtils.write("src/main/save/user-cache.txt", it)
                             appController.updateAuthToken(it)
-                            snackBarHostState.showSnackbar("Logged in as admin successfully!")
                             loginController.updateLoginState(loginState.copy(buttonEnabled = true))
                             appController.navigate(Routes.ASSESSMENT)
+                            snackBarHostState.showSnackbar("Logged in as admin successfully!")
                         },
                         error = {
-                            snackBarHostState.showSnackbar(it)
                             loginController.updateLoginState(loginState.copy(buttonEnabled = true))
+                            snackBarHostState.showSnackbar(it)
                         }
                     )
                 },

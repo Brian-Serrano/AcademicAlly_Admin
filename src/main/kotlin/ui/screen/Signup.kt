@@ -104,13 +104,13 @@ fun Signup(
                         success = {
                             FileUtils.write("src/main/save/user-cache.txt", it)
                             appController.updateAuthToken(it)
-                            snackBarHostState.showSnackbar("Signed up as admin successfully!")
                             signupController.updateSignupState(signupState.copy(buttonEnabled = true))
                             appController.navigate(Routes.ASSESSMENT)
+                            snackBarHostState.showSnackbar("Signed up as admin successfully!")
                         },
                         error = {
-                            snackBarHostState.showSnackbar(it)
                             signupController.updateSignupState(signupState.copy(buttonEnabled = true))
+                            snackBarHostState.showSnackbar(it)
                         }
                     )
                 },
